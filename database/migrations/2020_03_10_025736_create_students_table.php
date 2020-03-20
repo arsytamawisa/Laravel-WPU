@@ -15,7 +15,7 @@ class CreateStudentsTable extends Migration
     {
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
-            $table->char('nim', 10)->un ique();
+            $table->char('nim', 10)->unique();
             $table->string('nama_mahasiswa', 50);
             $table->char('kode_prodi',4);
             $table->timestamps();
